@@ -57,7 +57,7 @@ app.post("/", async (req, res) => {
 
 app.post('/issue', async (req, res) => {
  var requestedBookName = req.body.bookName;
- await book.update({state:"issues"},{where:{name:requestedBookName}})
+ await book.update({state:"Issued"},{where:{name:requestedBookName}})
 //  book.forEach(book => {
 //      if (book.bookName == requestedBookName) {
 //         return book.bookState = "Issued";
